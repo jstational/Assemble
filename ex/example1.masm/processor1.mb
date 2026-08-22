@@ -1,5 +1,4 @@
 pos: 0, -1
-type: Building
 block: world-processor;
 function main() {
     if(arc1.shooting) {
