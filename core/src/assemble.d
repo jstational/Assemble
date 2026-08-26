@@ -3,7 +3,7 @@ import std.file;
 import std.path;
 
 // entry point for compilation
-int main(String[] args) {
+int main(string[] args) {
     if(!exists(args[0]) || !isDir(args[0])) {
         return(2); // the file could not be found or is not a directory
     }
