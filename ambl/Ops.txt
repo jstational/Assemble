@@ -1,0 +1,66 @@
+PROCESSOR
+
++
+-
+*
+/
+// - integer division
+% - modulo
+^
+root(n, power)
+sqrt(n)
+crt(n) - cube root
+==
+!== - not equal
+! - logical not
+=== - strict equal
+!=== - strict not equal
+/\ - logical and
+<
+>
+<=
+>=
+log(n, base) - logarithm in base
+abs(n) - absolute
+floor(n) - floor
+ceil(n) - ceiling
+n << i - bitwise shift left by i
+n >> i - bitwise shift right by i
+x \/ y - logical or
+band(x, y) - bitwise and
+bnand(x, y) - bitwise nand
+bxor(x, y) - bitwise xor
+bxnor(x, y) - bitwise xnor
+bor(x, y) - bitwise or
+bnor(x, y) - bitwise nor
+cycshift(x, y) - shift base 10 number by y
+x <> y - logical xor
+x <!> y - logical xnor
+bnot(x) - bitwise flip
+max(x, y) - max
+min(x, y) - min
++% - positive modulo
+atan(x)
+atan2(x, y)
+acos(x)
+asin(x)
+cos(x)
+sin(x)
+hypot(x, y) - hypotenuse
+shortAngleDist(x, y) - shortest angular distance
+vectlen(x1, x2, y1, y2)
+vectangle(x1, x2, y1, y2)
+noise(x, y)
+rand(x, y) - random number from x to y
+randint(x, y) - random integer from x to y
+cosh(x)
+sinh(x)
+tanh(x)
+acosh(x)
+asinh(x)
+atanh(x)
+atanh2(x, y) - fun operator, if you want something weird. (1/2) * ln((x + y)/(x - y))
+ln(x) - natural logarithm
+lerp(x, time) - linear interpolation
+
+WORLD PROCESSOR

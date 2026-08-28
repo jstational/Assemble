@@ -1,0 +1,34 @@
+PROCESSOR
+
+Weathers
+.(WeatherName): Weather
+
+Blocks
+.(BlockName): Block
+
+Units
+.(UnitName): UnitType
+.boundUnit: Unit
+
+WORLD PROCESSOR
+
+Queries
+.queries: Sequence<Building/Unit>
+.length: Number
+.queryUnitCircle(Team/Number team, Number x, Number y, Number radius)
+.queryUnitRect(Team/Number team, Number x, Number y, Number width, Number height)
+.queryBuildCircle(Team/Number team, Number x, Number y, Number radius)
+.queryBuildRect(Team/Number team, Number x, Number y, Number width, Number height)
+
+Announcements
+.announce(Number sec)
+.mission(Var success)
+.notify(Var success)
+.toast(Number sec)
+.announceWait(Number sec)
+.missionWait()
+.notifyWait()
+.toastWait(Number sec)
+
+Weathers
+.(WeatherName).isActive
