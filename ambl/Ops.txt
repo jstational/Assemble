@@ -48,8 +48,8 @@ cos(x)
 sin(x)
 hypot(x, y) - hypotenuse
 shortAngleDist(x, y) - shortest angular distance
-vectlen(x1, x2, y1, y2)
-vectangle(x1, x2, y1, y2)
+vectlen(x1, x2, y1, y2)(vec1, vec2)
+vectangle(x1, x2, y1, y2)(vec1, vec2)
 noise(x, y)
 rand(x, y) - random number from x to y
 randint(x, y) - random integer from x to y
@@ -58,9 +58,7 @@ sinh(x)
 tanh(x)
 acosh(x)
 asinh(x)
-atanh(x)
-atanh2(x, y) - fun operator, if you want something weird. (1/2) * ln((x + y)/(x - y))
+atanh(num)
+atanh2(x, y) - fun operator. (1/2) * ln((x + y)/(x - y))
 ln(x) - natural logarithm
 lerp(x, time) - linear interpolation
-
-WORLD PROCESSOR

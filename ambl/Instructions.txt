@@ -1,7 +1,5 @@
 PROCESSOR
 
-print(String str)
-printFlush(Building build)
 stop()
 end()
 wait(Number sec)

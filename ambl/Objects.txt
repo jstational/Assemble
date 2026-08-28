@@ -10,9 +10,13 @@ Units
 .(UnitName): UnitType
 .boundUnit: Unit
 
+IO
+.print(String str)
+.printFlush(Building build)
+
 WORLD PROCESSOR
 
-Queries
+World
 .queries: Sequence<Building/Unit>
 .length: Number
 .queryUnitCircle(Team/Number team, Number x, Number y, Number radius)
@@ -20,15 +24,16 @@ Queries
 .queryBuildCircle(Team/Number team, Number x, Number y, Number radius)
 .queryBuildRect(Team/Number team, Number x, Number y, Number width, Number height)
 
-Announcements
-.announce(Number sec)
-.mission(Var success)
-.notify(Var success)
-.toast(Number sec)
+Weathers
+.(WeatherName).isActive
+
+IO
+.localePrint(String localeName)
+.announce(Number sec): Boolean
+.mission(): Boolean
+.notify(): Boolean
+.toast(Number sec): Boolean
 .announceWait(Number sec)
 .missionWait()
 .notifyWait()
 .toastWait(Number sec)
-
-Weathers
-.(WeatherName).isActive
