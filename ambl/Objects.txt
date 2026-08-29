@@ -1,39 +1,97 @@
-PROCESSOR
+PROCESSOR ===========
 
 Weathers
-.(WeatherName): Weather
+::(WeatherName): Weather
 
 Blocks
-.(BlockName): Block
+::(BlockName): Block
+.get(Number id): Block
+.count: Number
 
-Units
-.(UnitName): UnitType
-.boundUnit: Unit
+UnitTypes
+::(UnitTypeName): UnitType
+.get(Number id): UnitType
+.count: Number
+
+Items
+::(ItemName): Item
+.get(Number id): Item
+.count: Number
+
+Liquids
+::(LiquidName): Liquid
+.get(Number id): Liquid
+.count: Number
 
 IO
-.print(String str)
-.printFlush(Building build)
+.print(String str): Void
+.getLink(Number i)
+.links(): Number
 
-WORLD PROCESSOR
+Exec
+.stop(): Void
+.end(): Void
+.wait(Number sec): Void
+.boundUnit(): Unit
+.bind(UnitType): Unit
+.unbind(): Void
+
+Math
+.pi: Number
+.e: Number
+.degToRad(x): Number
+.radToDeg(x): Number
+.interp
+       .lerp(x, time): Number - linear interpolation
+       .mc(x, time): Number - monotonic cubic
+
+This: Building
+.ipt(): Number
 
 World
-.queries: Sequence<Building/Unit>
-.length: Number
-.queryUnitCircle(Team/Number team, Number x, Number y, Number radius)
-.queryUnitRect(Team/Number team, Number x, Number y, Number width, Number height)
-.queryBuildCircle(Team/Number team, Number x, Number y, Number radius)
-.queryBuildRect(Team/Number team, Number x, Number y, Number width, Number height)
+.timeMS(): Number
+.timeSEC(): Number
+.timeMIN(): Number
+.timeH(): Number
+.timeD(): Number
+.waveNum(): Number
+.waveTime(): Number
+.width(): Number
+.height(): Number
+.tick(): Number
+
+WORLD PROCESSOR ===========
+
+Net
+.onServer(): Boolean
+.onClientOnServer(): Boolean
+.clientLocale(): String
+.clientUnit(): Unit
+.clientName(): String
+.clientTeam(): Number
+.onMobile(): Boolean
+.playingMusic: Boolean - settable
+.currentMusic: String - settable
+
+
+World
+.queries(): Sequence<Entity>
+.queryUnitCircle(Team/Number team, Number x, Number y, Number radius): Void
+.queryUnitRect(Team/Number team, Number x, Number y, Number width, Number height): Void
+.queryBuildCircle(Team/Number team, Number x, Number y, Number radius): Void
+.queryBuildRect(Team/Number team, Number x, Number y, Number width, Number height): Void
+.flags::(flag): Boolean - settable privileged
 
 Weathers
-.(WeatherName).isActive
+::(WeatherName).isActive: Boolean - settable privileged
 
 IO
-.localePrint(String localeName)
+.localePrint(String localeName): Void
 .announce(Number sec): Boolean
 .mission(): Boolean
 .notify(): Boolean
 .toast(Number sec): Boolean
-.announceWait(Number sec)
-.missionWait()
-.notifyWait()
-.toastWait(Number sec)
+.announceWait(Number sec): Void
+.missionWait(): Void
+.notifyWait(): Void
+.toastWait(Number sec): Void

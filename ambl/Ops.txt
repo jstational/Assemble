@@ -1,58 +1,63 @@
-PROCESSOR
+ARITHMETIC
 
-+
--
-*
-/
-// - integer division
-% - modulo
-^
+x + y
+x - y
+x * y
+x / y
+x // y - integer division
+x % y - modulo
+x ^ y
 root(n, power)
 sqrt(n)
 crt(n) - cube root
-==
-!== - not equal
-! - logical not
-=== - strict equal
-!=== - strict not equal
-/\ - logical and
-<
->
-<=
->=
-log(n, base) - logarithm in base
 abs(n) - absolute
 floor(n) - floor
 ceil(n) - ceiling
-n << i - bitwise shift left by i
-n >> i - bitwise shift right by i
+x +% y - positive modulo
+x# - factorial
+round(n) - round
+
+LOGICAL
+
+x /\ y - logical and
 x \/ y - logical or
-band(x, y) - bitwise and
-bnand(x, y) - bitwise nand
-bxor(x, y) - bitwise xor
-bxnor(x, y) - bitwise xnor
-bor(x, y) - bitwise or
-bnor(x, y) - bitwise nor
-cycshift(x, y) - shift base 10 number by y
 x <> y - logical xor
 x <!> y - logical xnor
-bnot(x) - bitwise flip
-max(x, y) - max
-min(x, y) - min
-+% - positive modulo
+!x - logical not
+
+COMPARISON
+
+x == y
+x === y - strict equal
+x < y
+x > y
+x <= y
+x >= y
+
+TRIGONOMETRY
+
 atan(x)
 atan2(x, y)
 acos(x)
 asin(x)
 cos(x)
 sin(x)
+csc(x) - cosecant
+csch(x)
+sec(x) - secant
+sech(x)
+cot(x) - cotangent
+coth(x)
+acsc(x)
+asec(x)
+acot(x)
+acsch(x)
+asech(x)
+acot(x)
 hypot(x, y) - hypotenuse
 shortAngleDist(x, y) - shortest angular distance
 vectlen(x1, x2, y1, y2)(vec1, vec2)
 vectangle(x1, x2, y1, y2)(vec1, vec2)
-noise(x, y)
-rand(x, y) - random number from x to y
-randint(x, y) - random integer from x to y
 cosh(x)
 sinh(x)
 tanh(x)
@@ -60,5 +65,39 @@ acosh(x)
 asinh(x)
 atanh(num)
 atanh2(x, y) - fun operator. (1/2) * ln((x + y)/(x - y))
+
+ALGEBRA
+
+log(n, base) - logarithm in base
 ln(x) - natural logarithm
-lerp(x, time) - linear interpolation
+
+BITWISE
+
+n << i - bitwise shift left by i
+n >> i - bitwise shift right by i
+band(x, y) - bitwise and
+bnand(x, y) - bitwise nand
+bxor(x, y) - bitwise xor
+bxnor(x, y) - bitwise xnor
+bor(x, y) - bitwise or
+bnor(x, y) - bitwise nor
+bnot(x) - bitwise flip
+
+EXTRA
+
+max(x, y) - max
+min(x, y) - min
+noise(x, y)(vec2)
+rand(x, y)(vec2) - random number from x to y
+randint(x, y)(vec2) - random integer from x to y
+
+NUM-AS-LIST
+
+cycshift(x, y) - shift base 10 number by y, ex: cycshift(5983, -1) = 9835
+getDigit(n, i) - get digit of n at i
+getDigits(n, i, s) - get digits of n at i until i + s 
+
+COMBINATORICS
+
+x nPr y - permutations
+x nCr y - combinations
