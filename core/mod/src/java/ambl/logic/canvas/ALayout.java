@@ -1,4 +1,4 @@
-package ambl.logic;
+package ambl.logic.canvas;
 
 import mindustry.logic.LCanvas.*;
 
