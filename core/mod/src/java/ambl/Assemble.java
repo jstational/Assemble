@@ -19,7 +19,7 @@ public class Assemble extends Mod {
                 replacem.show();
             }
         } else {
-            Vars.ui.logic = new AStartDialog();
+            Vars.ui.logic = new ADialog();
         }
     }
 

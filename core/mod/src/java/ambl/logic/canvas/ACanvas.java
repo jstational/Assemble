@@ -6,9 +6,11 @@ import arc.*;
 import ambl.logic.*;
 import arc.scene.event.*;
 import arc.input.*;
+import ambl.logic.blocks.*;
 
 public class ACanvas extends LCanvas {
     public boolean dragging;
+    public ABlock draggingBlock;
 
     public ACanvas() {
         canvas = this;
